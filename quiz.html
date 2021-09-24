@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link rel="stylesheet" href="quizStyle.css">
 </head>
 
 <body>
@@ -20,11 +21,20 @@
     </h1>
     <form class="main-container">
         <div class="quiz-container">
-            <label>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</label>
+            <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+            <label><input type="radio" name="first-answer" id="first-choice1">45°</label>
+            <label><input type="radio" name="first-answer" id="first-choice2">60°</label>
+            <label><input type="radio" name="first-answer" id="first-choice3">90°</label>
         </div>
-        <div class="quiz-container"></div>
-        <div class="quiz-container"></div>
+        <div class="quiz-container">
+            <p>a triangle has an angle of 90 degrees, what is it called?</p>
+            <label><input type="radio" name="second-answer" id="second-choice1">obtuse</label>
+            <label><input type="radio" name="second-answer" id="second-choice2">acute</label>
+            <label><input type="radio" name="second-answer" id="second-choice3">right angled</label>
+        </div>
+            <button type="submit" class="btn-submit">Submit Form</button>
     </form>
+    <script src="quiz.js"></script>
 </body>
 
 </html>
