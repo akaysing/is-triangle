@@ -7,8 +7,8 @@ const buttonCheck = document.querySelector(".btn-check");
 
 buttonCheck.addEventListener("click", function checkTriangle() {
     hideMessage();
-    const sumOfAngles = firstAngle.value + secondAngle.value + thirdAngle.value;
-    if (sumOfAngles === 180) {
+    const sumOfAngles = Number(firstAngle.value) + Number(secondAngle.value) + Number(thirdAngle.value);
+    if ((sumOfAngles === 180)) {
         showMessage("Yayy, the angles form a triangle");
     } else {
         showMessage("Oh! no, the angles do not form a triangle");
